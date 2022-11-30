@@ -12,11 +12,14 @@ body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
+    background-color: #800014;
 }
 
 .titulo {
     display: flex;
+    color: #fff;
 }
+
 
 .urna {
 

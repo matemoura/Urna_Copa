@@ -16,7 +16,7 @@ let etapas = [
                 nome: 'KYLIAN MBAPPE',
                 pais: 'França',
                 fotos: [
-                    {url:'mbappe.jpeg', legenda: 'Mbappe'}
+                    {url:'Mbappe.jpeg', legenda: 'Mbappe'}
                 ]
             },
             {
@@ -38,7 +38,7 @@ let etapas = [
 
   {
                 numero: '09',
-                nome: 'Richarlison',
+                nome: 'RICHARLISON',
                 pais: 'Brasil',
                 fotos: [
                     {url:'richarlison.jpeg', legenda: 'Richarlison'}
