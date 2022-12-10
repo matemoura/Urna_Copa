@@ -34,7 +34,6 @@ class funcoes {
         document.querySelector('.imgJogador').src = 'imagens/imagem-do-avatar-perfil-no-fundo-cinzento-142213585.jpg'
         document.querySelector('.nome').value = "";
         document.querySelector('.pais').value = "";
-        document.querySelector('.idade').value = "";
         document.querySelector('.voto').innerHTML = "...";
     }
 
@@ -52,42 +51,36 @@ class funcoes {
                 document.querySelector('.imgJogador').src = 'imagens/Kylian_Mbappe.jpeg';
                 document.querySelector('.nome').value = sessionStorage.getItem(candidato);
                 document.querySelector('.pais').value = 'França';
-                document.querySelector('.idade').value = '23';
                 document.querySelector('.voto').innerHTML = "Seu Voto Vai Para..." + sessionStorage.getItem(candidato);
                 break;
             case 9:
                 document.querySelector('.imgJogador').src = 'imagens/Richarlisson.jpeg';
                 document.querySelector('.nome').value = sessionStorage.getItem(candidato);
                 document.querySelector('.pais').value = 'Brasil';
-                document.querySelector('.idade').value = '25';
                 document.querySelector('.voto').innerHTML = "Seu Voto Vai Para..." + sessionStorage.getItem(candidato);
                 break;
             case 10:
                 document.querySelector('.imgJogador').src = 'imagens/Lionel_Messi.jpeg';
                 document.querySelector('.nome').value = sessionStorage.getItem(candidato);
                 document.querySelector('.pais').value = 'Argentina';
-                document.querySelector('.idade').value = '35';
                 document.querySelector('.voto').innerHTML = "Seu Voto Vai Para..." + sessionStorage.getItem(candidato);
                 break;
             case 13:
                 document.querySelector('.imgJogador').src = 'imagens/Enner_Valencia.jpeg';
                 document.querySelector('.nome').value = sessionStorage.getItem(candidato);
                 document.querySelector('.pais').value = 'Equador';
-                document.querySelector('.idade').value = '33';
                 document.querySelector('.voto').innerHTML = "Seu Voto Vai Para..." + sessionStorage.getItem(candidato);
                 break;
             case 30:
                 document.querySelector('.imgJogador').src = 'imagens/Gavi.jpeg';
                 document.querySelector('.nome').value = sessionStorage.getItem(candidato);
                 document.querySelector('.pais').value = 'Espanha';
-                document.querySelector('.idade').value = '18';
                 document.querySelector('.voto').innerHTML = "Seu Voto Vai Para..." + sessionStorage.getItem(candidato);
                 break;
             case 0:
-                document.querySelector('.imgJogador').src = 'imagem-do-avatar-perfil-no-fundo-cinzento-142213585.jpg';
+                document.querySelector('.imgJogador').src = 'imagens/imagem-do-avatar-perfil-no-fundo-cinzento-142213585.jpg';
                 document.querySelector('.nome').value = sessionStorage.getItem(candidato);
                 document.querySelector('.pais').value = 'Nulo';
-                document.querySelector('.idade').value = 'Nulo';
                 document.querySelector('.voto').innerHTML = "Voto Anulado...";
         }
 
@@ -134,7 +127,6 @@ class funcoes {
             document.querySelector('.imgJogador').src = 'imagens/imagem-do-avatar-perfil-no-fundo-cinzento-142213585.jpg'
             document.querySelector('.nome').value = "";
             document.querySelector('.pais').value = "";
-            document.querySelector('.idade').value = "";
             document.querySelector('.voto').innerHTML = "...";
             document.querySelector('.campo1').value = "";
             document.querySelector('.campo2').value = "";
@@ -172,7 +164,6 @@ class funcoes {
             document.querySelector('.imgJogador').src = 'imagens/imagem-do-avatar-perfil-no-fundo-cinzento-142213585.jpg'
             document.querySelector('.nome').value = "";
             document.querySelector('.pais').value = "";
-            document.querySelector('.idade').value = "";
             document.querySelector('.voto').innerHTML = "...";
             document.querySelector('.campo1').value = "";
             document.querySelector('.campo2').value = "";
