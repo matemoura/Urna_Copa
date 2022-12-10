@@ -1,82 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urna Eletrônica</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Copa</title>
 </head>
+
 <body>
-    <div class="titulo"><h1>Urna Eletrônica</h1></div>
-
-    <div class="urna">
-
-        <div class="tela">
-
-            <div class="d-1">
-                <div class="d-1-left">
-                    <div class="d-1-1">
-                        <span>SEU VOTO PARA</span>
+    <div class="base-urna">
+        <div class="tela-urna">
+            <div class="campo-dados">
+                <div class="dados">
+                    <div class="img-jogador">
+                        <img src="/imagens/imagem-do-avatar-perfil-no-fundo-cinzento-142213585.jpg" alt="" class="imgJogador">
                     </div>
-                    <div class="d-1-2">
-                        <span>MELHOR JOGADOR DA COPA</span>
-                    </div>
-                    <div class="d-1-3">
-                        <div class="numero pisca"></div>
-                        <div class="numero"></div>
-                    </div>
-                    <div class="d-1-4">
-                        Nome: FULANO<br/>
-                        Pais: PAIS<br/>
-                    </div>
-                </div>
-                <div class="d-1-right">
-                    <div class="d-1-image">
-                        <img src="images/" alt=""/>
-                        Jogador
+                    <div class="infos-jogador">
+                        <div class="row-info">
+                            <label>NOME:</label>
+                            <input type="text" class="nome" readonly>
+                        </div>
+                        <div class="row-info">
+                            <label>PAIS:</label>
+                            <input type="text" class="pais" readonly>
+                        </div>
+                        <div class="row-info">
+                            <label>IDADE:</label>
+                            <input type="text" class="idade" readonly>
+                        </div>
                     </div>
                 </div>
+                <h1 class="voto">...</h1>
             </div>
-            
-            <div class="d-2">
-                Aperte a tela: <br/>
-                    CONFIRMA para CONFIRMAR este voto<br/>
-                    CORRIGE para CORRIGIR este voto
+            <div class="campo-votacao">
+                <label>Insira os Números</label>
+                <div class="inputs">
+                    <input type="text" maxlength="1" readonly class="campo1">
+                    <input type="text" maxlength="1" readonly class="campo2">
+                </div>
             </div>
-
         </div>
-        <div class="teclado">
-            <div class="teclado--linha">
-                <div class="teclado--botao" onclick="clicou('1')" >1</div>
-                <div class="teclado--botao" onclick="clicou('2')">2</div>
-                <div class="teclado--botao" onclick="clicou('3')">3</div>
-            </div>
-            <div class="teclado--linha">
-                <div class="teclado--botao" onclick="clicou('4')">4</div>
-                <div class="teclado--botao" onclick="clicou('5')">5</div>
-                <div class="teclado--botao" onclick="clicou('6')">6</div>
-            </div>
-            <div class="teclado--linha">
-                <div class="teclado--botao" onclick="clicou('7')">7</div>
-                <div class="teclado--botao" onclick="clicou('8')">8</div>
-                <div class="teclado--botao" onclick="clicou('9')">9</div>
-            </div>
-            <div class="teclado--linha">
-                <div class="teclado--botao" onclick="clicou('0')">0</div>
-            </div>
-            <div class="teclado--linha">
-                <div class="teclado--botao botao--branco" onclick="branco()">BRANCO</div>
-                <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
-                <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMA</div>
-            </div>
 
+        <div class="botoes-urna">
+            <div class="row-btn">
+                <input type="button" value="1" onclick="urna.inserir(1)">
+                <input type="button" value="2" onclick="urna.inserir(2)">
+                <input type="button" value="3" onclick="urna.inserir(3)">
+            </div>
+            <div class="row-btn">
+                <input type="button" value="4" onclick="urna.inserir(4)">
+                <input type="button" value="5" onclick="urna.inserir(5)">
+                <input type="button" value="6" onclick="urna.inserir(6)">
+            </div>
+            <div class="row-btn">
+                <input type="button" value="7" onclick="urna.inserir(7)">
+                <input type="button" value="8" onclick="urna.inserir(8)">
+                <input type="button" value="9" onclick="urna.inserir(9)">
+            </div>
+            <div class="row-btn">
+                <input type="button" value="0" onclick="urna.inserir(0)">
+            </div>
+            <div class="row-btn funcoes">
+                <input type="button" value="Branco" class="branco" onclick="urna.branco()">
+                <input type="button" value="Corrigir" class="corrigir" onclick="urna.corrigir()">
+                <input type="button" value="Confirmar" class="confirmar" onclick="urna.votar()">
+            </div>
         </div>
     </div>
 
-    <h2><a href="index.html" target="_self"><strong>Recarregar</strong></a></h2>
+    <br><br>
+    
+    <div class="resultado">
+        <a href="resultados.html">Resultados</a>
+    </div>
 
-    <script src="etapas.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
